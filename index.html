@@ -6,11 +6,11 @@
   </head>
   <body>
 
-    <header class="header">
-      <div class="container">
-        <a class="logo" href="#">
+    <li class="container">
+      <header class="header">
+        <div class="logo">
           <img src="http://placehold.it/156x65" width="156" height="65" alt="">
-        </a>
+        </div>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -43,7 +43,7 @@
         </nav>
         <div class="header__actions">
           <div class="search">
-            <div class="search__handler"></div>
+            <div class="search__handler">Искать</div>
             <form class="search__form" action="" method="">
               <input class="input" type="search" placeholder="Что ищем?">
             </form>
@@ -65,7 +65,7 @@
             <div class="cart__body">
               <div class="purchase">
                 <div class="purchase__delete">
-                  <button class="cancel" type="button"></button>
+                  <a class="cancel" href="#"></a>
                 </div>
                 <div class="purchase__preview">
                   <img src="http://placehold.it/33x33" width="33" height="33" alt="">
@@ -78,7 +78,7 @@
               </div>
               <div class="purchase">
                 <div class="purchase__delete">
-                  <button class="cancel" type="button"></button>
+                  <a class="cancel" href="#"></a>
                 </div>
                 <div class="purchase__preview">
                   <img src="http://placehold.it/33x33" width="33" height="33" alt="">
@@ -90,98 +90,98 @@
                 <div class="purchase__total">300 руб.</div>
               </div>
               <div class="cart__total">750 руб.</div>
-              <button class="button button_primary" type="submit">Оформить заказ</button>
+              <a class="button button_primary" href="#">Оформить заказ</a>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <div class="stage">
-      <div class="slide slide_creme-brulee">
-        <div class="slide__title">Крем-брюле и пломбир с малиновым джемом</div>
-        <a class="button_primary" href="#">Давайте оба!</a>
+      <div class="stage">
+        <div class="slide slide_creme-brulee">
+          <div class="slide__title">Крем-брюле и пломбир с малиновым джемом</div>
+          <a class="button_primary" href="#">Давайте оба!</a>
+        </div>
+        <div class="stage__nav">
+          <button class="stage__link stage__link_active" type="button"></button>
+          <button class="stage__link" type="button"></button>
+          <button class="stage__link" type="button"></button>
+        </div>
       </div>
-      <div class="stage__nav">
-        <button class="stage__link stage__link_active" type="button"></button>
-        <button class="stage__link" type="button"></button>
-        <button class="stage__link" type="button"></button>
-      </div>
-    </div>
 
-    <section class="ingredients">
-      <div class="topping topping_raspberry">
-        <b class="topping__title">Малинка даром!</b>
-        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a class="button button_primary" href="#">Хочу варенье!</a>
-      </div>
-      <div class="topping topping_chocolate">
-        <b class="topping__title">Шоколадки даром!</b>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a class="button button_primary" href="#">Хочу шоколадки!</a>
-      </div>
-    </section>
+      <section class="ingredients">
+        <div class="topping topping_raspberry">
+          <h2 class="topping__title">Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="button button_primary" href="#">Хочу варенье!</a>
+        </div>
+        <div class="topping topping_chocolate">
+          <h2 class="topping__title">Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="button button_primary" href="#">Хочу шоколадки!</a>
+        </div>
+      </section>
 
-    <section class="catalog-preview">
-      <article class="item-preview item-preview_hot">
-        <a class="item-preview__stage" href="#">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="">
-          <div class="item-preview__price">310 ₽ <span class="unit">/кг</span></div>
-        </a>
-        <a class="item-preview__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <a class="button button_primary" href="#">Быстрый просмотр</a>
+      <section class="catalog-preview">
+        <article class="item-preview item-preview_hot">
+          <a class="item-preview__stage" href="#">
+            <img src="http://placehold.it/268x268" width="268" height="268" alt="">
+            <div class="item-preview__price">310 ₽ <span class="unit">/кг</span></div>
+          </a>
+          <a class="item-preview__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="button button_primary" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="item-preview item-preview_hot">
+          <a class="item-preview__stage" href="#">
+            <img src="http://placehold.it/268x268" width="268" height="268" alt="">
+            <div class="item-preview__price">380 ₽ <span class="unit">/кг</span></div>
+          </a>
+          <a class="item-preview__title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="button button_primary" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="item-preview item-preview_hot">
+          <a class="item-preview__stage" href="#">
+            <img src="http://placehold.it/268x268" width="268" height="268" alt="">
+            <div class="item-preview__price">355 ₽ <span class="unit">/кг</span></div>
+          </a>
+          <a class="item-preview__title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="button button_primary" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="item-preview item-preview_hot">
+          <a class="item-preview__stage" href="#">
+            <img src="http://placehold.it/268x268" width="268" height="268" alt="">
+            <div class="item-preview__price">415 ₽ <span class="unit">/кг</span></div>
+          </a>
+          <a class="item-preview__title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="button button_primary" href="#">Быстрый просмотр</a>
+        </article>
+      </section>
+
+      <section class="info">
+        <h2 class="info__title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+        <ul class="info__advantages">
+          <li class="info__feature info__feature_manufacture">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="info__feature info__feature_supply">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="info__feature info__feature_quality">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="info__feature info__feature_delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
+        </ul>
+      </section>
+
+      <article class="article-preview">
+        <img class="article-preview__image" src="http://placehold.it/560x220" width="560" height="220" alt="">
+        <div class="article-preview__prefix">Новое в нашем блоге</div>
+        <a class="article-preview__title" href="#">10  способов сервировки фруктовых щербетов к столу</a>
       </article>
-      <article class="item-preview item-preview_hot">
-        <a class="item-preview__stage" href="#">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="">
-          <div class="item-preview__price">380 ₽ <span class="unit">/кг</span></div>
-        </a>
-        <a class="item-preview__title" href="#">Сливочно-кофейное с кусочками шоколада</a>
-        <a class="button button_primary" href="#">Быстрый просмотр</a>
-      </article>
-      <article class="item-preview item-preview_hot">
-        <a class="item-preview__stage" href="#">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="">
-          <div class="item-preview__price">355 ₽ <span class="unit">/кг</span></div>
-        </a>
-        <a class="item-preview__title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        <a class="button button_primary" href="#">Быстрый просмотр</a>
-      </article>
-      <article class="item-preview item-preview_hot">
-        <a class="item-preview__stage" href="#">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="">
-          <div class="item-preview__price">415 ₽ <span class="unit">/кг</span></div>
-        </a>
-        <a class="item-preview__title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-        <a class="button button_primary" href="#">Быстрый просмотр</a>
-      </article>
-    </section>
 
-    <section class="info">
-      <h2 class="info__title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-      <p class="info__feature info__feature_manufacture">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-      <p class="info__feature info__feature_supply">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-      <p class="info__feature info__feature_quality">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-      <p class="info__feature info__feature_delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
-    </section>
+      <div class="subscribe">
+        <div class="subscribe__about">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </div>
+        <form class="subscribe__form" action="" method="">
+          <input class="input" type="email" placeholder="Электронная почта">
+          <button class="button button_primary" type="submit">Отправить</button>
+        </form>
+      </div>
 
-    <article class="article-preview">
-      <img class="article-preview__image" src="http://placehold.it/560x220" width="560" height="220" alt="">
-      <div class="article-preview__prefix"></div>
-      <a class="article-preview__title" href="#">10  способов сервировки фруктовых щербетов к столу</a>
-    </article>
-
-    <div class="subscribe">
-      <div class="subscribe__about">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </div>
-      <form class="subscribe__form" action="" method="">
-        <input class="input" type="email" placeholder="Электронная почта">
-        <button class="button button_primary" type="submit">Отправить</button>
-      </form>
-    </div>
-
-    <section class="path">
-      <!-- map widget -->
-      <div class="container">
+      <section class="path">
+        <!-- map widget -->
         <div class="bubble">
           <div class="contacts">
             <div class="contacts__address">
@@ -196,11 +196,9 @@
             <a class="button button_primary" href="#">Форма обратной связи</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="footer">
-      <div class="container">
+      <footer class="footer">
 
         <div class="social">
           <a class="social-network social-network_twitter" href="#">Twitter</a>
@@ -209,16 +207,20 @@
           <a class="social-network social-network_vkontakte" href="#">Вконтатке</a>
         </div>
 
-        <div class="info-pages">
-          <div class="info-pages__section">
-            <a class="importance" href="#">Для поставщиков</a>
-            <a href="#">О производстве</a>
-          </div>
-          <div class="info-pages__section">
-            <a href="#">Наши документы</a>
-            <a href="#">Экологические стандарты</a>
-          </div>
-        </div>
+        <ul class="info-pages">
+          <li class="info-pages__item">
+            <a class="info-pages__link info-pages__link_importance" href="#">Для поставщиков</a>
+          </li>
+          <li class="info-pages__item">
+            <a class="info-pages__link" href="#">Наши документы</a>
+          </li>
+          <li class="info-pages__item">
+            <a class="info-pages__link" href="#">О производстве</a>
+          </li>
+          <li class="info-pages__item">
+            <a class="info-pages__link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
 
         <div class="developer">
           <a class="developer__logo">
@@ -227,8 +229,9 @@
           Сделано в <a href="#">HTML Academy</a> © 2016
         </div>
 
-      </div>
-    </footer>
+      </footer>
+    </div>
+
 
   </body>
 </html>

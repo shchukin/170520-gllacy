@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <li class="container">
+    <div class="container">
       <header class="header">
         <div class="logo">
           <img src="http://placehold.it/156x65" width="156" height="65" alt="">
@@ -65,7 +65,7 @@
             <div class="cart__body">
               <div class="purchase">
                 <div class="purchase__delete">
-                  <a class="cancel" href="#"></a>
+                  <a class="cancel" href="#">Удалить</a>
                 </div>
                 <div class="purchase__preview">
                   <img src="http://placehold.it/33x33" width="33" height="33" alt="">
@@ -78,7 +78,7 @@
               </div>
               <div class="purchase">
                 <div class="purchase__delete">
-                  <a class="cancel" href="#"></a>
+                  <a class="cancel" href="#">Удалить</a>
                 </div>
                 <div class="purchase__preview">
                   <img src="http://placehold.it/33x33" width="33" height="33" alt="">
@@ -99,16 +99,24 @@
       <div class="stage">
         <div class="slide slide_creme-brulee">
           <div class="slide__title">Крем-брюле и пломбир с малиновым джемом</div>
-          <a class="button_primary" href="#">Давайте оба!</a>
+          <a class="button button_primary button_big" href="#">Давайте оба!</a>
+        </div>
+        <div class="slide slide_chocolate">
+          <div class="slide__title">Шоколадный пломбир и лимонный сорбет</div>
+          <a class="button button_primary button_big" href="#">Давайте оба!</a>
+        </div>
+        <div class="slide slide_cream">
+          <div class="slide__title">Пломбир с помадкой и клубничный щербет</div>
+          <a class="button button_primary button_big" href="#">Давайте оба!</a>
         </div>
         <div class="stage__nav">
-          <button class="stage__link stage__link_active" type="button"></button>
-          <button class="stage__link" type="button"></button>
-          <button class="stage__link" type="button"></button>
+          <button class="stage__link stage__link_active" type="button">Слайд 1</button>
+          <button class="stage__link" type="button">Слайд 2</button>
+          <button class="stage__link" type="button">Слайд 3</button>
         </div>
       </div>
 
-      <section class="ingredients">
+      <div class="ingredients">
         <div class="topping topping_raspberry">
           <h2 class="topping__title">Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -119,7 +127,7 @@
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="button button_primary" href="#">Хочу шоколадки!</a>
         </div>
-      </section>
+      </div>
 
       <section class="catalog-preview">
         <article class="item-preview item-preview_hot">
@@ -156,32 +164,37 @@
         </article>
       </section>
 
-      <section class="info">
-        <h2 class="info__title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+      <article class="info">
+        <h1 class="info__title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
         <ul class="info__advantages">
           <li class="info__feature info__feature_manufacture">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
           <li class="info__feature info__feature_supply">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
           <li class="info__feature info__feature_quality">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
           <li class="info__feature info__feature_delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
         </ul>
-      </section>
-
-      <article class="article-preview">
-        <img class="article-preview__image" src="http://placehold.it/560x220" width="560" height="220" alt="">
-        <div class="article-preview__prefix">Новое в нашем блоге</div>
-        <a class="article-preview__title" href="#">10  способов сервировки фруктовых щербетов к столу</a>
       </article>
 
-      <div class="subscribe">
-        <div class="subscribe__about">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </div>
-        <form class="subscribe__form" action="" method="">
-          <input class="input" type="email" placeholder="Электронная почта">
-          <button class="button button_primary" type="submit">Отправить</button>
-        </form>
-      </div>
+      <section class="summary">
+        <article class="article-preview">
+          <img class="article-preview__image" src="http://placehold.it/560x220" width="560" height="220" alt="">
+          <div class="article-preview__prefix">Новое в нашем блоге</div>
+          <a class="article-preview__title" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+        </article>
+        <div class="subscribe">
+          <div class="subscribe__inner">
+            <p class="subscribe__about">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+            <form class="subscribe__form" action="" method="">
+              <input class="input" type="email" placeholder="Электронная почта">
+              <button class="button button_primary" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <section class="path">
-        <!-- map widget -->
+        <div class="map">
+
+        </div>
         <div class="bubble">
           <div class="contacts">
             <div class="contacts__address">
@@ -201,10 +214,10 @@
       <footer class="footer">
 
         <div class="social">
-          <a class="social-network social-network_twitter" href="#">Twitter</a>
-          <a class="social-network social-network_instagram" href="#">Instagram</a>
-          <a class="social-network social-network_facebook" href="#">Facebook</a>
-          <a class="social-network social-network_vkontakte" href="#">Вконтатке</a>
+          <a class="web web_twitter" href="#">Twitter</a>
+          <a class="web web_instagram" href="#">Instagram</a>
+          <a class="web web_facebook" href="#">Facebook</a>
+          <a class="web web_vkontakte" href="#">Вконтатке</a>
         </div>
 
         <ul class="info-pages">

@@ -930,55 +930,121 @@ body {
 .footer {
   margin: 30px 0 0;
   border-top: 1px solid rgba(255,255,255, .3);
+  padding: 20px 0;
 }
-  .footer .social {
-
-  }
-
-  .footer .info-pages {
-
-  }
-
-  .info-pages .developer {
-
-  }
-
 
 
 .social {
-
+  margin-top: 17px;
+  font-size: 0;
 }
+  .social .web {
+    margin-left: 14px;
+  }
+
+  .social .web:first-child {
+    margin-left: 0;
+  }
 
 .web {
-
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255,255,255,.5);
+  border-radius: 50%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
+
+.web:hover {
+  border-color: rgba(255,255,255,.7);
+}
+
+.web:active {
+  border-color: rgba(255,255,255,.7);
+  box-shadow: inset 0 1px 2px #888888;
+}
+
+
 
 .info-pages {
-  margin: 0;
-  padding: 0;
+  margin: 15px 0 0;
+  padding: 0 20px 0 0;
   list-style: none;
+  font-size: 0;
 }
   .info-pages__item {
-
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
   }
-    .info-pages__link {
 
+  .info-pages__item:nth-child(odd) {
+    text-align: right;
+    padding-right: 30px;
+  }
+
+  .info-pages__item_importance {
+    font-weight: bold;
+  }
+    .info-pages__item a {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 13px;
+      line-height: 16px;
+      color: #fff;
     }
+
+    .info-pages__item a:hover {
+      text-decoration: none;
+    }
+
+    .info-pages__item_importance a:before {
+      content: '';
+      position: absolute;
+      right: 100%;
+      top: 1px;
+      margin-right: 8px;
+      display: block;
+      width: 15px;
+      height: 13px;
+      background: url(../img/info-pages__item_importance.svg) no-repeat center center;
+    }
+
 
 .developer {
-
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  text-align: right;
 }
-  .developer__logo {
-
+  .developer__inner {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
   }
-    .developer__logo img {
-
+    .developer__logo {
+      display: inline-block;
+      vertical-align: top;
     }
+      .developer__logo img {
+        vertical-align: top;
+      }
 
-  .developer__description {
+    .developer__description {
+      margin-top: 5px;
+    }
+      .developer__description a {
+        color: inherit;
+      }
 
-  }
-
+      .developer__description a:hover {
+        text-decoration: none;
+      }
 
 
 

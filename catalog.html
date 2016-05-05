@@ -137,49 +137,79 @@
             <form class="params__form" action="" method="">
               <div class="params__tiles">
                 <div class="params__item">
-                  <div class="params__label">Сортировка:</div>
-                  <select name="">
+                  <label class="params__label" for="filter-sort">Сортировка:</label>
+                  <select class="select" name="filter-sort" id="filter-sort">
                     <option value="">по популярности</option>
-                    <option value="">...</option>
-                    <option value="">...</option>
+                    <option value="">сначала недорогие</option>
+                    <option value="">сначала дорогие</option>
+                    <option value="">по жирности</option>
                   </select>
                 </div>
                 <div class="params__item">
                   <div class="range">
-                    <div class="range__output">Цена: <input class="range__min" type="number" step="50" min="0" value="100"> руб. – <input class="range__max" type="number" step="50" min="0" value="500"> руб:</div>
+                    <div class="range__output">Цена: <input class="range__value" type="text" step="50" min="0" value="100"> руб. – <input class="range__value" type="text" step="50" min="0" value="500"> руб:</div>
                     <div class="range__widget">
-                      <div class="range__handler">Минимальная цена</div>
-                      <div class="range__bar">Диапазон цены</div>
-                      <div class="range__handler">Максимальная цена</div>
+                      <div class="range__track">
+                        <div class="range__bar" style="left: 10%; width: 70%;">Диапазон цены</div>
+                        <div class="range__handler" style="left: 10%;">Минимальная цена</div>
+                        <div class="range__handler" style="left: 80%;">Максимальная цена</div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="params__item">
                   <div class="params__label">Жирность:</div>
                   <div class="checklist">
-                    <input type="radio" name="" id="fat-0">
-                    <label for="fat-0">0%</label>
-                    <input type="radio" name="" id="fat-10">
-                    <label for="fat-10">до 10%</label>
-                    <input type="radio" name="" id="fat-30">
-                    <label for="fat-30">до 30%</label>
-                    <input type="radio" name="" id="fat-over-30">
-                    <label for="fat-over-30">выше 30%</label>
+                    <label class="choice choice_type_radio">
+                      <input class="choice__control" type="radio" name="filter-fat" value="0">
+                      <span class="choice__icon"></span>
+                      <span class="choice__label">0%</span>
+                    </label>
+                    <label class="choice choice_type_radio">
+                      <input class="choice__control" type="radio" name="filter-fat" value="lt10">
+                      <span class="choice__icon"></span>
+                      <span class="choice__label">до 10%</span>
+                    </label>
+                    <label class="choice choice_type_radio">
+                      <input class="choice__control" type="radio" name="filter-fat" value="lt30">
+                      <span class="choice__icon"></span>
+                      <span class="choice__label">до 30%</span>
+                    </label>
+                    <label class="choice choice_type_radio">
+                      <input class="choice__control" type="radio" name="filter-fat" value="gt30">
+                      <span class="choice__icon"></span>
+                      <span class="choice__label">выше 30%</span>
+                    </label>
                   </div>
                 </div>
                 <div class="params__item">
                   <div class="params__label">Наполнители:</div>
                   <div class="checklist">
-                    <input type="checkbox" name="" id="topping-chocolate">
-                    <label for="topping-chocolate">шоколадные</label>
-                    <input type="checkbox" name="" id="topping-sugar">
-                    <label for="topping-sugar">сахарные присыпки</label>
-                    <input type="checkbox" name="" id="topping-fruits">
-                    <label for="topping-fruits">фрукты</label>
-                    <input type="checkbox" name="" id="topping-syrup">
-                    <label for="topping-syrup">сиропы</label>
-                    <input type="checkbox" name="" id="topping-jam">
-                    <label for="topping-jam">джемы</label>
+                    <label class="choice choice_type_check">
+                      <input class="choice__control" type="checkbox" name="filter-topping" value="chocolate">
+                      <span class="choice__icon"></span>
+                      <span class="choice__label">шоколадные</span>
+                    </label>
+                    <label class="choice choice_type_check">
+                      <input class="choice__control" type="checkbox" name="filter-topping" value="sugar">
+                      <span class="choice__icon"></span>
+                      <span class="choice__label">сахарные присыпки</span>
+                    </label>
+                    <label class="choice choice_type_check">
+                      <input class="choice__control" type="checkbox" name="filter-topping" value="fruit">
+                      <span class="choice__icon"></span>
+                      <span class="choice__label">фрукты</span>
+                    </label>
+                    <label class="choice choice_type_check">
+                      <input class="choice__control" type="checkbox" name="filter-topping" value="syrup">
+                      <span class="choice__icon"></span>
+                      <span class="choice__label">сиропы</span>
+                    </label>
+                    <label class="choice choice_type_check">
+                      <input class="choice__control" type="checkbox" name="filter-topping" value="jam">
+                      <span class="choice__icon"></span>
+                      <span class="choice__label">джемы</span>
+                    </label>
                   </div>
                 </div>
                 <div class="params__item params__item_no-label">

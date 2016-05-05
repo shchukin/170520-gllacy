@@ -1049,28 +1049,88 @@ body {
 
 
 .item-preview {
-
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
 }
-  .item-preview__stage {
+  .item-preview__overlay {
+    position: absolute;
+    z-index: 100;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -77px;
+    background: rgba(255,255,255,.3);
+    border-radius: 5px;
+    display: none;
+  }
+
+  .item-preview:hover .item-preview__overlay {
     display: block;
   }
-    .item-preview__stage img {
-      vertical-align: top;
-      width: 100%;
-      height: auto;
+    .item-preview__overlay .button {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 17px;
     }
 
-    .item-preview__price {
-
-    }
-
-  .item-preview__title {
-
+  .item-preview__container {
+    position: relative;
   }
 
+    .item-preview__stage {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+      .item-preview__stage img {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      .item-preview__price {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 7px;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 45px;
+        text-shadow: 0 1px 3px rgba(49,50,53,.5);
+      }
+        .item-preview__price .unit {
+          font-size: 30px;
+          line-height: 45px;
+        }
+
+        .item-preview__price .currency {
+          margin-left: 4px;
+        }
+
+  .item-preview__title {
+    display: block;
+    color: inherit;
+    margin-top: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .item-preview__title:hover {
+    text-decoration: none;
+  }
+
+
 .catalog {
-  margin: 41px 0 104px;
+  margin: 3px 0 80px;
 }
+  .catalog .tiles__item {
+    margin-top: 38px;
+  }
 
 .pagination {
   margin: 0;

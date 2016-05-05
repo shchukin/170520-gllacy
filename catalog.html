@@ -47,60 +47,73 @@
           <div class="header__actions">
             <div class="search">
               <div class="search__handler">Искать</div>
-              <form class="search__form" action="" method="">
-                <input class="input" type="search" placeholder="Что ищем?">
-              </form>
+              <div class="search__dropdown">
+                <form class="search__form" action="" method="">
+                  <div class="input">
+                    <input class="input__control" placeholder="Что ищем?" name="search" type="search" id="search">
+                    <label class="input__placeholder" for="search">Что ищем?</label>
+                  </div>
+                </form>
+              </div>
             </div>
             <div class="login">
               <div class="login__handler">Вход</div>
-              <form class="login__form" action="" method="">
-                <input class="input" type="text">
-                <input class="input" type="password">
-                <div class="login__foot">
-                  <button class="button button_primary" type="submit">Войти</button>
-                  <div class="login__actions">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
+              <div class="login__dropdown">
+                <form class="login__form" action="" method="">
+                  <div class="input">
+                    <input class="input__control" placeholder="Электронная почта" type="text" name="login-name" id="login-name">
+                    <label class="input__placeholder" for="search">Электронная почта</label>
                   </div>
-                </div>
-              </form>
+                  <div class="input">
+                    <input class="input__control" placeholder="Пароль" type="password" name="login-password" id="login-password">
+                    <label class="input__placeholder" for="search">Пароль</label>
+                  </div>
+                  <div class="login__foot">
+                    <button class="button button_secondary" type="submit">Войти</button>
+                    <div class="login__actions">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
             <div class="cart cart_fill">
               <div class="cart__handler">2 товара</div>
-              <div class="cart__body">
-                <div class="purchase">
-                  <div class="purchase__delete">
+              <div class="cart__dropdown">
+                <div class="cart__body">
+                  <div class="purchase">
                     <a class="cancel" href="#">Удалить</a>
+                    <a class="purchase__preview" href="#">
+                      <img src="img/purchase__preview-01.jpg" width="33" height="33" alt="">
+                    </a>
+                    <a class="purchase__title" href="#">Пломбир с апельсиновым джемом</a>
+                    <div class="purchase__amount">
+                      1,5 кг х <span class="cost">200 руб.</span>
+                    </div>
+                    <div class="purchase__total">300 руб.</div>
                   </div>
-                  <div class="purchase__preview">
-                    <img src="http://placehold.it/33x33" width="33" height="33" alt="">
-                  </div>
-                  <div class="purchase__title">Пломбир с апельсиновым джемом</div>
-                  <div class="purchase__amount">
-                    1,5 кг х <span class="cost">200 руб.</span>
-                  </div>
-                  <div class="purchase__total">300 руб.</div>
-                </div>
-                <div class="purchase">
-                  <div class="purchase__delete">
+                  <div class="purchase">
                     <a class="cancel" href="#">Удалить</a>
+                    <a class="purchase__preview" href="#">
+                      <img src="img/purchase__preview-02.jpg" width="33" height="33" alt="">
+                    </a>
+                    <a class="purchase__title" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                    <div class="purchase__amount">
+                      1,5 кг х <span class="cost">300 руб.</span>
+                    </div>
+                    <div class="purchase__total">450 руб.</div>
                   </div>
-                  <div class="purchase__preview">
-                    <img src="http://placehold.it/33x33" width="33" height="33" alt="">
+                  <div class="cart__total">Итого: 750 руб.</div>
+                  <div class="cart__submit">
+                    <a class="button button_secondary" href="#">Оформить заказ</a>
                   </div>
-                  <div class="purchase__title">Клубничный пломбир с присыпкой из белого шоколада</div>
-                  <div class="purchase__amount">
-                    1,5 кг х <span class="cost">200 руб.</span>
-                  </div>
-                  <div class="purchase__total">300 руб.</div>
                 </div>
-                <div class="cart__total">750 руб.</div>
-                <a class="button button_primary" href="#">Оформить заказ</a>
               </div>
             </div>
             <div class="contacts-preview">
               <div class="contacts-preview__working-hours">С 10 до 20, ежедневно</div>
-              <a href="tel:+78124502525">8 812 450-25-25</a>
+              <a class="contacts-preview__call" href="tel:+78124502525">8 812 450-25-25</a>
             </div>
           </div>
         </header>
@@ -367,6 +380,8 @@
         </footer>
       </div>
     </div>
+
+    <script src="js/input.js"></script>
 
   </body>
 </html>

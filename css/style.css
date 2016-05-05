@@ -247,9 +247,31 @@ body {
     border: 1px solid #fff;
   }
 
+  .choice:hover .choice__icon {
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+  }
+
   .choice__label {
+    display: block;
     padding: 0 0 0 28px;
   }
+
+
+  .choice__control:disabled + .choice__icon,
+  .choice__control:disabled ~ .choice__label {
+    opacity: .2;
+    cursor: default;
+  }
+
+  .choice:hover .choice__control:disabled + .choice__icon {
+    width: 18px;
+    height: 18px;
+    border-width: 1px;
+  }
+
+
 
 
 /* checkbox */
@@ -267,16 +289,18 @@ body {
 }
 
 .choice_type_check .choice__control:checked + .choice__icon:before {
-  left: 10px;
-  top: 4px;
+  left: 50%;
+  top: 50%;
+  margin: -5px 0 0 1px;
   width: 2px;
   height: 11px;
   transform: rotate(45deg);
 }
 
 .choice_type_check .choice__control:checked + .choice__icon:after {
-  left: 3px;
-  top: 10px;
+  left: 50%;
+  top: 50%;
+  margin: 1px 0 0 -6px;
   width: 6px;
   height: 2px;
   transform: rotate(45deg);
@@ -289,11 +313,24 @@ body {
   border-radius: 50%;
 }
 
+.choice_type_radio .choice__control:checked + .choice__icon {
+  width: 18px;
+  height: 18px;
+  border-width: 1px;
+  cursor: default;
+}
+
+.choice_type_radio .choice__control:checked ~ .choice__label {
+  cursor: default;
+}
+
+
 .choice_type_radio .choice__control:checked + .choice__icon:after {
   content: '';
   position: absolute;
-  left: 4px;
-  top: 4px;
+  left: 50%;
+  top: 50%;
+  margin: -5px 0 0 -5px;
   display: block;
   width: 10px;
   height: 10px;

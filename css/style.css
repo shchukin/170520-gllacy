@@ -884,6 +884,11 @@ body {
   }
 
 
+
+.inner-page {
+  margin-top: -20px;
+}
+
 .breadcrumbs {
   margin: 0;
   padding: 0;
@@ -1566,32 +1571,32 @@ body {
 
 /* slider related */
 
-.site-wrapper {
+.index-wrapper {
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease,
               background-color 0.5s ease;
 }
 
-.site-wrapper:before,
-.site-wrapper:after {
+.index-wrapper:before,
+.index-wrapper:after {
   content: "";
   visibility: hidden;
 }
 
-.site-wrapper:before,
-.site-wrapper:after {
+.index-wrapper:before,
+.index-wrapper:after {
   background-image: url("../img/slider-01.png");
 }
 
-.site-wrapper:after {
+.index-wrapper:after {
   background-image: url("../img/slider-02.png");
 }
 
 
 .slider {
   position: relative;
-  padding-top: 270px;
+  padding-top: 276px;
   text-align: center;
   color: #ffffff;
 }
@@ -1607,7 +1612,7 @@ body {
 
 .slider-controls {
   position: absolute;
-  bottom: 25px;
+  bottom: 22px;
   left: 0;
   z-index: 20;
 
@@ -1641,30 +1646,30 @@ body {
   display: none;
 }
 
-#slide-to-01:checked ~ .site-wrapper #slide1,
-#slide-to-02:checked ~ .site-wrapper #slide2,
-#slide-to-03:checked ~ .site-wrapper #slide3 {
+#slide-to-01:checked ~ .index-wrapper #slide1,
+#slide-to-02:checked ~ .index-wrapper #slide2,
+#slide-to-03:checked ~ .index-wrapper #slide3 {
   display: block;
 }
 
-#slide-to-01:checked ~ .site-wrapper {
+#slide-to-01:checked ~ .index-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-03.png");
 }
 
-#slide-to-02:checked ~ .site-wrapper {
+#slide-to-02:checked ~ .index-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider-02.png");
 }
 
-#slide-to-03:checked ~ .site-wrapper {
+#slide-to-03:checked ~ .index-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-01.png");
 }
 
-#slide-to-01:checked ~ .site-wrapper label[for="slide-to-01"],
-#slide-to-02:checked ~ .site-wrapper label[for="slide-to-02"],
-#slide-to-03:checked ~ .site-wrapper label[for="slide-to-03"] {
+#slide-to-01:checked ~ .index-wrapper label[for="slide-to-01"],
+#slide-to-02:checked ~ .index-wrapper label[for="slide-to-02"],
+#slide-to-03:checked ~ .index-wrapper label[for="slide-to-03"] {
   background-color: #ffffff;
   cursor: default;
 }

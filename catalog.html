@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -137,9 +136,9 @@
           <div class="params">
             <form class="params__form" action="" method="">
               <div class="params__tiles">
-                <div class="params__item">
+                <div class="params__item params__item_sort">
                   <label class="params__label" for="filter-sort">Сортировка:</label>
-                  <select class="select" name="filter-sort" id="filter-sort">
+                  <select class="select select_sort" name="filter-sort" id="filter-sort">
                     <option value="">по популярности</option>
                     <option value="">сначала недорогие</option>
                     <option value="">сначала дорогие</option>
@@ -185,7 +184,7 @@
                 </div>
                 <div class="params__item">
                   <div class="params__label">Наполнители:</div>
-                  <div class="checklist">
+                  <div class="checklist checklist_sparse">
                     <label class="choice choice_type_check">
                       <input class="choice__control" type="checkbox" name="filter-topping" value="chocolate">
                       <span class="choice__icon"></span>
@@ -459,6 +458,7 @@
             </div>
           </div>
         </footer>
+
       </div>
     </div>
 

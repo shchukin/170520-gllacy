@@ -251,7 +251,7 @@ body {
   position: relative;
   font-weight: 500;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: #fff;
   cursor: pointer;
 }
@@ -289,7 +289,7 @@ body {
 
   .choice__label {
     display: block;
-    padding: 2px 0 0 29px;
+    padding: 0 0 0 29px;
   }
 
 
@@ -373,25 +373,36 @@ body {
 }
 
 
-.select   {
+.select {
   outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
   border: none;
   box-sizing: border-box;
   height: 36px;
-  padding: 0 30px 0 14px;
-  background: rgba(255,255,255,.2) url(../img/select.svg) no-repeat right 15px center;
-  border-radius: 18px;
+  padding-left: 14px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  background: rgba(255,255,255,.2);
+}
+
+.webkit .select,
+.firefox .select,
+.edge .select
+{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+  padding-right: 30px;
+  background-image: url(../img/select.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  border-radius: 18px;
+}
+
+.webkit .select,
+.firefox .select {
   color: #fff;
 }
 
-.select_sort {
-  width: 193px;
-}
 
 
 .checklist {
@@ -474,7 +485,7 @@ body {
       .nav__link {
         color: inherit;
         display: block;
-        padding: 6px 13px 4px;
+        padding: 5px 13px;
         border-radius: 16px;
       }
 

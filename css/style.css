@@ -625,15 +625,29 @@ body {
   text-align: left;
 }
   .search__handler {
+    display: block;
     width: 32px;
     height: 32px;
     background: rgba(255,255,255,.2);
     border-radius: 50%;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    /* don't let people go to search page if they have CSS */
+    pointer-events: none;
   }
 
   .search:hover .search__handler {
     background-color: #f8f7f4;
   }
+    .search__icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
     .search:hover #magnifier {
       fill: #333333;
     }
@@ -670,7 +684,9 @@ body {
   text-align: left;
 }
   .login__handler {
+    text-decoration: none;
     position: relative;
+    display: block;
     padding: 0 15px 0 43px;
     height: 32px;
     line-height: 32px;
@@ -680,6 +696,9 @@ body {
     font-size: 14px;
     color: #fff;
     cursor: default;
+
+    /* don't let users go to login page when CSS enabled */
+    pointer-events: none;
   }
 
   .login:hover .login__handler {
@@ -765,7 +784,9 @@ body {
 
 }
   .cart__handler {
+    text-decoration: none;
     position: relative;
+    display: block;
     padding: 2px 15px 0 43px;
     min-width: 59px;
     height: 30px;
@@ -776,6 +797,9 @@ body {
     font-size: 14px;
     color: #fff;
     cursor: default;
+
+    /* don't let people go to cart fallback page, use dropdown */
+    pointer-events: none;
   }
 
   .cart_fill:hover .cart__handler {
@@ -1628,7 +1652,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/map.jpg) no-repeat center 100%;
+    background: #f7f1d9 url(../img/map.jpg) no-repeat center 100%;
   }
 
 .ymaps-2-1-38-svg-icon {

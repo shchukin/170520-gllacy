@@ -6,6 +6,9 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <noscript>
+      <link rel="stylesheet" href="css/noscript.css">
+    </noscript>
   </head>
   <body>
 
@@ -45,7 +48,7 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <span class="nav__link nav__link_active">Каталог</span>
+                <a class="nav__link" href="catalog.html">Каталог</a>
                 <ul class="subnav">
                   <li class="subnav__item">
                     <a class="subnav__link subnav__link_highlight" href="#">Новинки</a>
@@ -167,298 +170,37 @@
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">Главная</a>
             </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Каталог</a>
-            </li>
             <li class="breadcrumbs__item breadcrumbs__item_active">
-              <span class="breadcrumbs__link breadcrumbs__link_active">Сливочное</span>
+              <span class="breadcrumbs__link breadcrumbs__link_active">Обратная связь</span>
             </li>
           </ul>
 
-          <h1 class="page-title">Сливочное мороженое</h1>
+          <h1 class="page-title">Обратная связь</h1>
 
-          <div class="params">
-            <form class="params__form" action="" method="">
-              <div class="params__tiles">
-                <div class="params__item params__item_sort">
-                  <label class="params__label" for="filter-sort">Сортировка:</label>
-                  <select class="select select_sort" name="filter-sort" id="filter-sort">
-                    <option value="">по популярности</option>
-                    <option value="">сначала недорогие</option>
-                    <option value="">сначала дорогие</option>
-                    <option value="">по жирности</option>
-                  </select>
-                </div>
-                <div class="params__item">
-                  <div class="range">
-                    <div class="range__output">Цена: <input class="range__value" type="text" value="100"> руб. – <input class="range__value" type="text" value="500"> руб:</div>
-                    <div class="range__widget">
-                      <div class="range__track">
-                        <div class="range__bar" style="left: 10%; width: 70%;">Диапазон цены</div>
-                        <div class="range__handler" style="left: 10%;">Минимальная цена</div>
-                        <div class="range__handler" style="left: 80%;">Максимальная цена</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="params__item">
-                  <div class="params__label">Жирность:</div>
-                  <div class="checklist">
-                    <label class="choice choice_type_radio">
-                      <input class="choice__control" type="radio" name="filter-fat" value="0">
-                      <span class="choice__icon"></span>
-                      <span class="choice__label">0%</span>
-                    </label>
-                    <label class="choice choice_type_radio">
-                      <input class="choice__control" type="radio" name="filter-fat" value="lt10">
-                      <span class="choice__icon"></span>
-                      <span class="choice__label">до 10%</span>
-                    </label>
-                    <label class="choice choice_type_radio">
-                      <input class="choice__control" type="radio" name="filter-fat" value="lt30">
-                      <span class="choice__icon"></span>
-                      <span class="choice__label">до 30%</span>
-                    </label>
-                    <label class="choice choice_type_radio">
-                      <input class="choice__control" type="radio" name="filter-fat" value="gt30">
-                      <span class="choice__icon"></span>
-                      <span class="choice__label">выше 30%</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="params__item">
-                  <div class="params__label">Наполнители:</div>
-                  <div class="checklist checklist_sparse">
-                    <label class="choice choice_type_check">
-                      <input class="choice__control" type="checkbox" name="filter-topping" value="chocolate">
-                      <span class="choice__icon"></span>
-                      <span class="choice__label">шоколадные</span>
-                    </label>
-                    <label class="choice choice_type_check">
-                      <input class="choice__control" type="checkbox" name="filter-topping" value="sugar">
-                      <span class="choice__icon"></span>
-                      <span class="choice__label">сахарные присыпки</span>
-                    </label>
-                    <label class="choice choice_type_check">
-                      <input class="choice__control" type="checkbox" name="filter-topping" value="fruit">
-                      <span class="choice__icon"></span>
-                      <span class="choice__label">фрукты</span>
-                    </label>
-                    <label class="choice choice_type_check">
-                      <input class="choice__control" type="checkbox" name="filter-topping" value="syrup">
-                      <span class="choice__icon"></span>
-                      <span class="choice__label">сиропы</span>
-                    </label>
-                    <label class="choice choice_type_check">
-                      <input class="choice__control" type="checkbox" name="filter-topping" value="jam">
-                      <span class="choice__icon"></span>
-                      <span class="choice__label">джемы</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="params__item params__item_no-label">
-                  <button class="button button_filter" type="submit">Применить</button>
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <div class="catalog">
-            <div class="tiles tiles_columns_4">
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-01.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">310<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-02.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">380<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочно-кофейное с кусочками шоколада</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-03.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">355<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-04.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">415<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-05.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">325<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочное с брусничным джемом</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-06.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">410<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочно-черничное с цельными ягодами черники</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-07.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">375<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочно-лимонное с карамельной присыпкой</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-08.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">320<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочное с шоколадной стружкой</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-09.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">440<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочно-ванильное с кусочками шоколада</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-10.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">435<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочноe с ментоловым сиропом</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-11.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">355<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочное с кусочками черного шоколада</a>
-                  </div>
-                </article>
-              </div>
-              <div class="tiles__item">
-                <article class="item-preview">
-                  <div class="item-preview__overlay">
-                    <a class="button button_secondary" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="item-preview__container">
-                    <a class="item-preview__stage" href="#">
-                      <img src="img/catalog-12.jpg" width="267" height="267" alt="">
-                      <div class="item-preview__price">420<span class="currency">₽</span><span class="unit">/кг</span></div>
-                    </a>
-                    <a class="item-preview__title" href="#">Сливочное с мятным сиропом</a>
-                  </div>
-                </article>
+          <form class="feedback" id="feedback">
+            <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
+            <div class="feedback__field feedback__field_short">
+              <div class="input">
+                <input class="input__control" placeholder="Как вас зовут?" type="text" name="feedback-name" id="feedback-name">
+                <label class="input__placeholder" for="feedback-name">Как вас зовут?</label>
               </div>
             </div>
-          </div>
-
-          <ul class="pagination">
-            <li class="pagination__item">
-              <a class="pagination__direction pagination__direction_prev pagination__direction_disabled" href="#">Назад</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link_active" href="#">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">4</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">5</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__direction pagination__direction_next" href="#">Вперед</a>
-            </li>
-          </ul>
+            <div class="feedback__field feedback__field_short">
+              <div class="input">
+                <input class="input__control" placeholder="Ваша почта для ответа?" type="email" name="feedback-email" id="feedback-email">
+                <label class="input__placeholder" for="feedback-email">Ваша почта для ответа?</label>
+              </div>
+            </div>
+            <div class="feedback__field">
+              <div class="input input_widget_area">
+                <textarea class="input__control" placeholder="Напишите что-нибудь..." name="feedback-message" id="feedback-message"></textarea>
+                <label class="input__placeholder" for="feedback-message">Напишите что-нибудь...</label>
+              </div>
+            </div>
+            <div class="feedback__field feedback__field_submit">
+              <button class="button" type="submit">Отправить</button>
+            </div>
+          </form>
 
         </main>
 

@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
+  var popup;
+
   var feedback = {};
   var feedbackLocal = {};
+
+  popup = document.querySelector('.popup_feedback');
 
   feedback.form = document.querySelector('#feedback');
   feedback.name = feedback.form.querySelector('#feedback-name');
@@ -24,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     /* look for empty field and inform user */
     if( !feedback.name.value || !feedback.email.value || !feedback.message.value ) {
+      popup.classList.add('popup_error');
       alert('Пожалуйста, заполните все поля!');
       return;
     }
@@ -34,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     alert('Спасибо! Ваше сообщение отправлено.');
 
     feedback.form.submit();
-    
+
   });
 
 });

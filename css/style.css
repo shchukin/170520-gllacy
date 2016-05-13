@@ -95,7 +95,7 @@ body {
   line-height: 42px;
   text-align: center;
   border-radius: 23px;
-  background: linear-gradient(#f26843, #ca3824);
+  background: #ee5c3e linear-gradient(#f26843, #ca3824);
   box-shadow: 0 2px 2px rgba(85,8,0,.54);
   font-weight: bold;
   font-size: 18px;
@@ -1473,10 +1473,12 @@ body {
 }
 
 .topping_raspberry {
+  background-color: #b22755;
   background-image: url(../img/topping_raspberry.jpg);
 }
 
 .topping_chocolate {
+  background-color: #572c15;
   background-image: url(../img/topping_chocolate.jpg);
 }
 
@@ -1501,7 +1503,7 @@ body {
 .info {
   margin-top: 38px;
   padding: 24px 20px;
-  background: url(../img/info.jpg) repeat left top;
+  background: #eee3cc url(../img/info.jpg) repeat left top;
   border-radius: 12px;
   font-size: 16px;
   line-height: 22px;
@@ -1581,7 +1583,7 @@ body {
 
 
 .subscribe {
-  background: url(../img/subscribe.png) repeat left top;
+  background: #fff url(../img/subscribe.png) repeat left top;
   padding: 5px;
   border-radius: 12px;
   font-size: 16px;

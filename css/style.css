@@ -15,7 +15,9 @@
 
 
 
-
+.visually-hidden {
+  display: none;
+}
 
 .clearfix:before,
 .clearfix:after {
@@ -1038,12 +1040,8 @@ body {
   margin-top: 17px;
   font-size: 0;
 }
-  .social .web {
+  .social .web + .web {
     margin-left: 14px;
-  }
-
-  .social .web:first-child {
-    margin-left: 0;
   }
 
 .web {
@@ -1053,9 +1051,16 @@ body {
   width: 30px;
   height: 30px;
   padding: 3px;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
   .web__icon {
+    position: absolute;
+    left: 3px;
+    top: 3px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -1623,6 +1628,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
+    background: url(../img/map.jpg) no-repeat center 100%;
   }
 
 .ymaps-2-1-38-svg-icon {

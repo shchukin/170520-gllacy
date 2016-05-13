@@ -29,11 +29,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function popupShow(popup){
     lockPage();
     popup.classList.add('popup_visible');
+
+    /* feedback popup only */
+    if ( popup.id === 'feedback' ) {
+      var feedbackField = popup.querySelectorAll('#feedback-name, #feedback-email, #feedback-message');
+
+      /* look for first empty field and give it a focus */
+      for( var i = 0; i < feedbackField.length; i++ ) {
+        if( ! feedbackField[i].value.length ) {
+          feedbackField[i].focus();
+          break;
+        }
+      }
+    }
   }
 
   function popupHide(popup) {
     // in case of Esc
-    if( ! popup ) {
+    if ( ! popup ) {
       popup = document.querySelector('.popup_visible');
     }
     if ( popup ) {
@@ -81,8 +94,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   /* hide popup by Esc press */
 
-  document.addEventListener('keydown', function (event) {
-    if( event.keyCode === 27) {
+  window.addEventListener('keydown', function (event) {
+    if ( event.keyCode === 27) {
       popupHide();
     }
   });
